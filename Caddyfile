@@ -1,0 +1,27 @@
+:8080 {
+	handle /sign2text/static* {
+		uri strip_prefix /sign2text/static
+		root * ./SLRT/TwoStreamNetwork/videos
+		file_server browse
+	}
+	handle /sign2text* {
+		uri strip_prefix /sign2text
+		reverse_proxy 127.0.0.1:8000
+	}
+	handle /spoken2sign/static* {
+		uri strip_prefix /spoken2sign/static
+		root * ./SLRT/Spoken2Sign/videos
+		file_server browse
+	}
+	handle /spoken2sign* {
+		uri strip_prefix /spoken2sign
+		reverse_proxy 127.0.0.1:8001
+	}
+	handle /text2gloss* {
+		uri strip_prefix /text2gloss
+		reverse_proxy 127.0.0.1:8081
+	}
+	handle {
+		redir https://github.com/bmak-slg-app/SLRT
+	}
+}

@@ -1,0 +1,3 @@
+[submodule "SLRT"]
+	path = SLRT
+	url = https://github.com/bmak-slg-app/SLRT.git
