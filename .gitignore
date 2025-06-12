@@ -5,3 +5,7 @@
 
 # redis
 dump.rdb
+
+# data and pretrained models
+data/
+pretrained_models/
