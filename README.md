@@ -57,6 +57,8 @@ Please refer to the below google sheet link for a list of resources required
 for running the services. The list contains the download link and the location
 of the files to be put locally.
 
+https://docs.google.com/spreadsheets/d/1v3AavjtOxcYVJP6QY-J5J9pp_j4tiQH9mRARr7qMOeQ/edit?usp=sharing
+
 ## Running the Services
 
 ### Starting the Services
